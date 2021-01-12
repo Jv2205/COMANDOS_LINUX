@@ -1,3 +1,16 @@
+Extras:
+    Troca de terminal no Linux | Alt + seta para direita/esquerda
+    Editor texto (insert) | tecla "I"
+    Sair do editor de texto (insert | tecla "esc"
+    Salvar Alterações | Digitar "wq"
+    
+Atualizar terminal
+    bash
+
+Ping
+    Ping
+    (ctrl + c para parar o ping)
+    
 Criar Usuários
     adduser [Nome_do_Usuário] 
 
@@ -9,11 +22,10 @@ Entrar em outro Usuário
 
 Criar um Grupo
     groupadd [Nome_do_Grupo]
+    addgroup [Nome_do_Grupo]
 
-Adicionar Usuário ao Grupo
-    adduser [Nome_do_Usuário][Grupo]
-    addgroup [Nome_do_Usuário][Grupo]
-    gpasswd -a [Nome_do_Usuário][Grupo]
+Vizualizar Usuário
+    cat /etc/passwd
 
 Vizualizar Grupos
     cat etc/group
@@ -23,6 +35,12 @@ Deletar Usuário do Grupo
    
 Deletar um Grupo
     groupdel [Grupo]
+
+Adicionar Usuário ao Grupo
+    adduser [Nome_do_Usuário][Grupo]
+    addgroup [Nome_do_Usuário][Grupo]
+    gpasswd -a [Nome_do_Usuário][Grupo]
+    usermod -a -G [Grupo][Nome_do_Usuário]
 
 Mudar nome da Máquina
     hostnamectl set-hostname [Novo_Nome_da_Máquina]
@@ -46,6 +64,13 @@ Tornar um Usuário Dono da Pasta
     
 Reiniciar a VM
     systemctl restart networking
+    service networking restart
+
+Autualizar lista de pacotes
+    apt-get update
+    
+Instalar um Pacote
+    apt-get install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
 
 Pacotes para Instala
     VIM (vim)
@@ -54,8 +79,6 @@ Pacotes para Instala
     SSH (SSH openssh-server)
     DHCP (isc-dhcp-server)
 
-Autualizar lista de pacotes
-    apt-get update
-    
-Instalar um Pacote
-    apt-get install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
+Acessar VIM sem instalar (Basico)
+    vim.tiny 
+       *     /etc/network/interfaces | Acessar as interfaces
