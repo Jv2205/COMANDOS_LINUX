@@ -1,14 +1,17 @@
 Extras:
     Troca de terminal no Linux | Alt + seta para direita/esquerda
     Editor texto (insert) | tecla "I"
-    Sair do editor de texto (insert | tecla "esc"
+    Sair do editor de texto (insert) | tecla "esc"
     Salvar Alterações | Digitar "wq"
+    Sair sem Salvar | Digitar "q!"
+    Copiar no VIM (no menu neutro - esc) | "y [quantidade de linhas] y"
+    Colar no Vim (no menu neutro - esc) | "P"
     
 Atualizar terminal
     bash
 
 Ping
-    Ping
+    Ping [endereço]
     (ctrl + c para parar o ping)
     
 Criar Usuários
