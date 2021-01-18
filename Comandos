@@ -1,19 +1,42 @@
 Extras:
-    Troca de terminal no Linux | Alt + seta para direita/esquerda
+    Troca de terminal no Linux | Alt + seta para direita/esquerda OU Alt + f6 (f6 = terminal 6)
+                                                                              (f5 = terminal 5)
+                                                                              (f4 = terminal 4)
+                                                                              (f3 = terminal 3)
+                                                                              (f2 = terminal 2)
+                                                                              (f1 = terminal 1)
     Editor texto (insert) | tecla "I"
     Sair do editor de texto (insert) | tecla "esc"
     Salvar Alterações | Digitar "wq"
     Sair sem Salvar | Digitar "q!"
-    Copiar no VIM (no menu neutro - esc) | "y [quantidade de linhas] y"
+    Copiar no VIM (no menu neutro - esc) | "y [quantidade_de_linhas] y"
     Colar no Vim (no menu neutro - esc) | "P"
+__________________________________________________________________________________________________
+   MÁQUINA
+Mudar Nome da Máquina
+    hostnamectl set-hostname [Novo_Nome_da_Máquina]
+
+Acessar Interface
+    vim /etc/network/interfaces (É NECESSARIO TER O VIM INSTALADO NA MÁQUINA)
+    
+Reiniciar a Máquina
+    systemctl restart networking
+    service networking restart
+    
+Ver LOG do Sistema
+    tail -f -n 100 /var/log/syslog
     
 Atualizar terminal
     bash
 
-Ping
-    Ping [endereço]
-    (ctrl + c para parar o ping)
+Limpar a tela
+    clear
     
+Ping
+    ping [endereço]
+    (ctrl + c para parar o ping)
+__________________________________________________________________________________________________
+    USUÁRIOS, GRUPOS & DIRETORIOS
 Criar Usuários
     adduser [Nome_do_Usuário] 
 
@@ -23,30 +46,27 @@ Excluir Usuário
 Entrar em outro Usuário
     login [Nome_do_Usuário]
 
+Vizualizar Usuário
+    cat /etc/passwd
+    
 Criar um Grupo
     groupadd [Nome_do_Grupo]
     addgroup [Nome_do_Grupo]
-
-Vizualizar Usuário
-    cat /etc/passwd
-
-Vizualizar Grupos
-    cat etc/group
-
-Deletar Usuário do Grupo
-    gpasswd -d [Nome_do_Usuário][Grupo]
    
 Deletar um Grupo
     groupdel [Grupo]
-
+   
+Vizualizar Grupos
+    cat etc/group
+   
 Adicionar Usuário ao Grupo
     adduser [Nome_do_Usuário][Grupo]
     addgroup [Nome_do_Usuário][Grupo]
     gpasswd -a [Nome_do_Usuário][Grupo]
     usermod -a -G [Grupo][Nome_do_Usuário]
 
-Mudar nome da Máquina
-    hostnamectl set-hostname [Novo_Nome_da_Máquina]
+Deletar Usuário do Grupo
+    gpasswd -d [Nome_do_Usuário][Grupo]
 
 Criar um Diretorio
     mkdir -p /mnt/[Nome_do_Diretorio]
@@ -64,10 +84,10 @@ Dar Permissão para um Grupo/Usuário
     
 Tornar um Usuário Dono da Pasta
     chown [Nome_do_Usuário].[Nome_do_Grupo] /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário]
-    
-Reiniciar a VM
-    systemctl restart networking
-    service networking restart
+__________________________________________________________________________________________________
+    SERVIÇOS
+Reiniciar um serviço
+    /etc/init.d/[Serviço] restart
 
 Autualizar lista de pacotes
     apt-get update
@@ -80,8 +100,16 @@ Pacotes para Instala
     Net-Tools (net-tools)
     DNS (dnsutills)
     SSH (SSH openssh-server)
+    Apache 2 (apache2)
+    Bind9 (Bind9)
+    Bind9 Doc
     DHCP (isc-dhcp-server)
 
-Acessar VIM sem instalar (Basico)
+*VIM*
+- Acessar VIM sem instalar (Basico)
     vim.tiny 
        *     /etc/network/interfaces | Acessar as interfaces
+
+- Config do VIM
+    vim /etc/vim/vimrc
+    
