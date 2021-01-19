@@ -1,18 +1,18 @@
-# Extras:
-    Troca de terminal no Linux | Alt + seta para direita/esquerda OU Alt + f6 (f6 = terminal 6)
+EXTRAS:
+    Editor texto no VIM (insert) | tecla "I"
+    Sair do editor de texto do VIM (insert) | tecla "esc"
+    Salvar Alterações no VIM | Digitar "wq"
+    Sair do VIM sem Salvar | Digitar "q!"
+    Copiar no VIM (no menu neutro - esc) | "y [quantidade_de_linhas] y"
+    Colar no Vim (no menu neutro - esc) | "P"
+    Troca de terminal do Linux | Alt + seta para direita/esquerda OU Alt + f6 (f6 = terminal 6)
                                                                               (f5 = terminal 5)
                                                                               (f4 = terminal 4)
                                                                               (f3 = terminal 3)
                                                                               (f2 = terminal 2)
                                                                               (f1 = terminal 1)
-    Editor texto (insert) | tecla "I"
-    Sair do editor de texto (insert) | tecla "esc"
-    Salvar Alterações | Digitar "wq"
-    Sair sem Salvar | Digitar "q!"
-    Copiar no VIM (no menu neutro - esc) | "y [quantidade_de_linhas] y"
-    Colar no Vim (no menu neutro - esc) | "P"
 __________________________________________________________________________________________________
-MÁQUINA
+MÁQUINA:
     Mudar Nome da Máquina
         hostnamectl set-hostname [Novo_Nome_da_Máquina]
 
@@ -35,8 +35,14 @@ MÁQUINA
     Ping
         ping [endereço]
         (ctrl + c para parar o ping)
+    
+    Acessar um Diretorio
+        cd /etc/[Caminho]/[Nome_do_Diretorio]
+        
+    Criar um Backup
+        cp [Nome_do_arquivo] [Nome_do_Backup]
 __________________________________________________________________________________________________
-USUÁRIOS, GRUPOS & DIRETORIOS
+USUÁRIOS, GRUPOS & DIRETORIOS:
     Criar Usuários
         adduser [Nome_do_Usuário] 
 
@@ -85,7 +91,7 @@ USUÁRIOS, GRUPOS & DIRETORIOS
     Tornar um Usuário Dono da Pasta
         chown [Nome_do_Usuário].[Nome_do_Grupo] /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário]
 __________________________________________________________________________________________________
-SERVIÇOS
+SERVIÇOS:
     Reiniciar um serviço
         /etc/init.d/[Serviço] restart
 
@@ -99,10 +105,10 @@ SERVIÇOS
     - VIM (vim)
     - Net-Tools (net-tools)
     - DNS (dnsutills)
-    - SSH (SSH openssh-server)
+    - SSH (ssh openssh-server)
     - Apache 2 (apache2)
-    - Bind9 (Bind9)
-    - Bind9 Doc
+    - Bind9 (bind9)
+    - Bind9 Doc (bind9 doc)
     - DHCP (isc-dhcp-server)
 
 *VIM*
@@ -112,3 +118,12 @@ SERVIÇOS
     - Config do VIM
         vim /etc/vim/vimrc
     
+*Apache 2*
+    Desabilitar Site
+        a2dissite
+    
+    Habilitar Site
+        a2ensite
+    
+    Confingurar Index de maneira simples
+        echo "[Mensagem]" > /var/www/[Diretório_Destino]/index.html
