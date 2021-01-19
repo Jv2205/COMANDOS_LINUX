@@ -1,4 +1,28 @@
+
 DNS
-    SOA
-    - Start Of Authority (Autoridade sobre uma zona)
-    - 
+    @
+    Referencia a mim mesmo
+    
+    SOA (Start Of Authority)
+    - Autoridade sobre uma zona
+    
+    ZONA/DOMINIO
+    - Espaço administrativo 
+    
+    ENTRADA/HOST
+    - Acompanha a Zoza/Dominio para gerar um FQDN
+    
+    FQDN (Fully Qualifield Domain Name)
+    - Nome de um Dominio Absoluto
+
+    NS (Name Server)
+    - Responsável por correção de nome
+    
+    A (Address)
+    - Endereço IP configurado
+    
+    AAAA(Address)
+    - Endereço IP configurado, só que para IPV6
+    
+    CNAME (Comun Name)
+    - É um apelido para o site
