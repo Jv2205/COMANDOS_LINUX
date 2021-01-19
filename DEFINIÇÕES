@@ -30,3 +30,6 @@ DNS
     
     CNAME (Comun Name)
     - É um apelido para o site
+
+    PTR (Pointer)
+    - É um ponteiro que aponta a direção do site
