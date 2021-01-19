@@ -8,6 +8,10 @@ DNS
     
     ZONA/DOMINIO
     - Espaço administrativo 
+    _________________________
+    "."
+        Zona do "Root Server"
+    _________________________
     
     ENTRADA/HOST
     - Acompanha a Zoza/Dominio para gerar um FQDN
