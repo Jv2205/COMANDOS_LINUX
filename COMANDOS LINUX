@@ -127,3 +127,10 @@ SERVIÇOS:
     
     Confingurar Index de maneira simples
         echo "[Mensagem]" > /var/www/[Diretório_Destino]/index.html
+
+*Bind9*
+    Declarar uma zona
+        vim/nano named.conf.local
+        
+    Ver zonas Default
+        vim/nano named.conf.default-zone
