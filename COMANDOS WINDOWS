@@ -1,0 +1,5 @@
+  Liberar o IP
+    ip release
+  
+  Solicitar IP
+    ip renew
