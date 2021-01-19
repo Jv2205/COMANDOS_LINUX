@@ -12,104 +12,103 @@ Extras:
     Copiar no VIM (no menu neutro - esc) | "y [quantidade_de_linhas] y"
     Colar no Vim (no menu neutro - esc) | "P"
 __________________________________________________________________________________________________
-   MÁQUINA
-Mudar Nome da Máquina
-    hostnamectl set-hostname [Novo_Nome_da_Máquina]
+MÁQUINA
+    Mudar Nome da Máquina
+        hostnamectl set-hostname [Novo_Nome_da_Máquina]
 
-Acessar Interface
-    vim /etc/network/interfaces (É NECESSARIO TER O VIM INSTALADO NA MÁQUINA)
+    Acessar Interface
+        vim /etc/network/interfaces (É NECESSARIO TER O VIM INSTALADO NA MÁQUINA)
     
-Reiniciar a Máquina
-    systemctl restart networking
-    service networking restart
+    Reiniciar a Máquina
+        systemctl restart networking
+        service networking restart
     
-Ver LOG do Sistema
-    tail -f -n 100 /var/log/syslog
+    Ver LOG do Sistema
+        tail -f -n 100 /var/log/syslog
     
-Atualizar terminal
-    bash
+    Atualizar terminal
+        bash
 
-Limpar a tela
-    clear
+    Limpar a tela
+        clear
     
-Ping
-    ping [endereço]
-    (ctrl + c para parar o ping)
+    Ping
+        ping [endereço]
+        (ctrl + c para parar o ping)
 __________________________________________________________________________________________________
-    USUÁRIOS, GRUPOS & DIRETORIOS
-Criar Usuários
-    adduser [Nome_do_Usuário] 
+USUÁRIOS, GRUPOS & DIRETORIOS
+    Criar Usuários
+        adduser [Nome_do_Usuário] 
 
-Excluir Usuário
-    userdel -r [Nome_do_Usuário]
+    Excluir Usuário
+        userdel -r [Nome_do_Usuário]
     
-Entrar em outro Usuário
-    login [Nome_do_Usuário]
+    Entrar em outro Usuário
+        login [Nome_do_Usuário]
 
-Vizualizar Usuário
-    cat /etc/passwd
+    Vizualizar Usuário
+        cat /etc/passwd
     
-Criar um Grupo
-    groupadd [Nome_do_Grupo]
-    addgroup [Nome_do_Grupo]
+    Criar um Grupo
+        groupadd [Nome_do_Grupo]
+        addgroup [Nome_do_Grupo]
    
-Deletar um Grupo
-    groupdel [Grupo]
+    Deletar um Grupo
+        groupdel [Grupo]
    
-Vizualizar Grupos
-    cat etc/group
+    Vizualizar Grupos
+        cat etc/group
    
-Adicionar Usuário ao Grupo
-    adduser [Nome_do_Usuário][Grupo]
-    addgroup [Nome_do_Usuário][Grupo]
-    gpasswd -a [Nome_do_Usuário][Grupo]
-    usermod -a -G [Grupo][Nome_do_Usuário]
+    Adicionar Usuário ao Grupo
+        adduser [Nome_do_Usuário][Grupo]
+        addgroup [Nome_do_Usuário][Grupo]
+        gpasswd -a [Nome_do_Usuário][Grupo]
+        usermod -a -G [Grupo][Nome_do_Usuário]
 
-Deletar Usuário do Grupo
-    gpasswd -d [Nome_do_Usuário][Grupo]
+    Deletar Usuário do Grupo
+        gpasswd -d [Nome_do_Usuário][Grupo]
 
-Criar um Diretorio
-    mkdir -p /mnt/[Nome_do_Diretorio]
+    Criar um Diretorio
+        mkdir -p /mnt/[Nome_do_Diretorio]
 
-Criar Usuário/Grupo em um Diretorio
-    Grupo - mkdir -p /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]
-    Usuário - mkdir -p /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário] 
+    Criar Usuário/Grupo em um Diretorio
+        Grupo - mkdir -p /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]
+        Usuário - mkdir -p /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário] 
 
-Criar Pasta em um Diretorio
-    chgrp [Nome_da_Pasta_do_Grupo] /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo] [Nome_da_Pasta_do_Grupo]
+    Criar Pasta em um Diretorio
+        chgrp [Nome_da_Pasta_do_Grupo] /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo] [Nome_da_Pasta_do_Grupo]
     
-Dar Permissão para um Grupo/Usuário
-    Grupo - chmod 750 /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]
-    Usuário - chmod 750 /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário]
+    Dar Permissão para um Grupo/Usuário
+        Grupo - chmod 750 /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]
+        Usuário - chmod 750 /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário]
     
-Tornar um Usuário Dono da Pasta
-    chown [Nome_do_Usuário].[Nome_do_Grupo] /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário]
+    Tornar um Usuário Dono da Pasta
+        chown [Nome_do_Usuário].[Nome_do_Grupo] /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário]
 __________________________________________________________________________________________________
-    SERVIÇOS
-Reiniciar um serviço
-    /etc/init.d/[Serviço] restart
+SERVIÇOS
+    Reiniciar um serviço
+        /etc/init.d/[Serviço] restart
 
-Autualizar lista de pacotes
-    apt-get update
+    Autualizar lista de pacotes
+        apt-get update
     
-Instalar um Pacote
-    apt-get install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
+    Instalar um Pacote
+        apt-get install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
 
-Pacotes para Instala
-    VIM (vim)
-    Net-Tools (net-tools)
-    DNS (dnsutills)
-    SSH (SSH openssh-server)
-    Apache 2 (apache2)
-    Bind9 (Bind9)
-    Bind9 Doc
-    DHCP (isc-dhcp-server)
+    Pacotes para Instala
+    - VIM (vim)
+    - Net-Tools (net-tools)
+    - DNS (dnsutills)
+    - SSH (SSH openssh-server)
+    - Apache 2 (apache2)
+    - Bind9 (Bind9)
+    - Bind9 Doc
+    - DHCP (isc-dhcp-server)
 
 *VIM*
-- Acessar VIM sem instalar (Basico)
-    vim.tiny 
-       *     /etc/network/interfaces | Acessar as interfaces
-
-- Config do VIM
-    vim /etc/vim/vimrc
+    - Acessar VIM sem instalar (Basico) 
+         vim.tiny [Caminho_para_Documento]
+    
+    - Config do VIM
+        vim /etc/vim/vimrc
     
