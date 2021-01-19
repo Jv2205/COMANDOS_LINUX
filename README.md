@@ -1,3 +1,3 @@
-# COMANDOS_LINUX
+# WINDOWS & LINUX
 
-Repositorio de comandos do Linux usados em Aula
+Repositorio de comandos do Linux e Windows usados em Aula
