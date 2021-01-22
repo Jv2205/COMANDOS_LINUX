@@ -1,5 +1,5 @@
   Liberar o IP
-    ip release
+    ipconfig /release
   
   Solicitar IP
-    ip renew
+    ipconfig /renew
