@@ -96,19 +96,21 @@ SERVIÇOS:
         /etc/init.d/[Serviço] restart
 
     Autualizar lista de pacotes
-        apt-get update
+        apt update
     
     Instalar um Pacote
-        apt-get install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
+        apt install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
 
     Pacotes para Instala
     - VIM (vim)
     - Net-Tools (net-tools)
-    - DNS (dnsutills)
+    - DNS (dnsutils)
     - SSH (ssh openssh-server)
     - Apache 2 (apache2)
+    - Apache 2 Doc (apache2-doc)
+    - W3M (w3m)
     - Bind9 (bind9)
-    - Bind9 Doc (bind9 doc)
+    - Bind9 Doc (bind9-doc)
     - DHCP (isc-dhcp-server)
     - Proftpd (proftpd)
 
@@ -118,7 +120,11 @@ SERVIÇOS:
     
     - Config do VIM
         vim /etc/vim/vimrc
-    
+        
+    Habilitar o Set Number (números das linhas)
+        vim /etc/vim/vimrc
+            Descomentar o syntax ON
+            Escrever "Set Number" Embaixonairobi
 *Apache 2*
     Desabilitar Site
         a2dissite
