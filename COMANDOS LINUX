@@ -99,7 +99,7 @@ SERVIÇOS:
         apt update
     
     Instalar um Pacote
-        apt install [Nome_do_Pacote][USAR O QUE ESTÁ EM PARÊNTESES]
+        apt install [Nome_do_Pacote] #[LISTA DE PACOTES A SEGUIR]
 
     Pacotes para Instala
     - VIM (vim)
@@ -120,11 +120,12 @@ SERVIÇOS:
     
     - Config do VIM
         vim /etc/vim/vimrc
-        
+            ||
     Habilitar o Set Number (números das linhas)
         vim /etc/vim/vimrc
             Descomentar o syntax ON
-            Escrever "Set Number" Embaixonairobi
+            Escrever "Set Number" Logo abaixo 
+            
 *Apache 2*
     Desabilitar Site
         a2dissite
@@ -137,12 +138,12 @@ SERVIÇOS:
 
 *Bind9*
     Declarar uma zona
-        vim/nano named.conf.local
+        vim OU nano named.conf.local
         
     Ver zonas Default
-        vim/nano named.conf.default-zone
+        vim OU nano named.conf.default-zone
 
 *Proftpd*
     Configurar o proftpd
-        vim/nano proftpd.conf
+        vim OU nano proftpd.conf
         
