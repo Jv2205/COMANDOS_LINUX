@@ -1,3 +1,4 @@
-# WINDOWS & LINUX
+## SENAI_132
 
-Repositorio de comandos do Linux e Windows usados em Aula
+Repositorio com comandos, atalhos e detalhes aprendidos no SENAI Informatica 132
+ASS: J.V. Will
