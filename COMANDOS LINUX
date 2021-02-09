@@ -36,11 +36,12 @@ MÁQUINA:
         ping [endereço]
         (ctrl + c para parar o ping)
     
-    Acessar um Diretorio
-        cd /etc/[Caminho]/[Nome_do_Diretorio]
-        
     Criar um Backup
         cp [Nome_do_arquivo] [Nome_do_Backup]
+    
+    Alterar nome de arquivo
+        mv [Nome_do_arquivo] [Novo_Nome]
+     
 __________________________________________________________________________________________________
 USUÁRIOS, GRUPOS & DIRETORIOS:
     Criar Usuários
@@ -74,9 +75,16 @@ USUÁRIOS, GRUPOS & DIRETORIOS:
     Deletar Usuário do Grupo
         gpasswd -d [Nome_do_Usuário][Grupo]
 
+    
+    Acessar um Diretorio
+        cd /etc/[Caminho]/[Nome_do_Diretorio]
+        
     Criar um Diretorio
         mkdir -p /mnt/[Nome_do_Diretorio]
 
+    Sair do Diretorio
+        cd ..
+        
     Criar Usuário/Grupo em um Diretorio
         Grupo - mkdir -p /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]
         Usuário - mkdir -p /mnt/[Nome_do_Diretorio]/[Nome_do_Grupo]/[Nome_do_Usuário] 
